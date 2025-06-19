@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Карта сайта | Edumax</title>
+  <link rel="stylesheet" href="style.css" />
+   <script src="scripts.js"></script>
+</head>
+<body>
+ <button class="accessibility-btn" onclick="toggleFontSize()">A+</button>
+  <header>
+    <div class="logo"><a href="index.html"><img src="лого.jpeg" alt="Логотип" />Edumax</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="calc.html">Калькулятор</a></li>
+        <li><a href="login.html">Вход</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="checkout.html">Оформление</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="sitemap.html">Карта сайта</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Карта сайта</h1>
+    <ul class="sitemap">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+       <li><a href="calc.html">Калькулятор стоимости</a></li>
+        <li><a href="login.html">Вход / Регистрация</a></li>
+         <li><a href="reviews.html">Отзывы</a></li>
+      <li><a href="checkout.html">Оформление заявки</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="sitemap.html">Карта сайта</a></li>
+    </ul>
+  </main>
+
+  <!-- Кнопка "стрелка вверх" -->
+    <button id="scrollToTop">↑</button>
+
+    <script>
+    // Показать кнопку, когда прокрутили вниз
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        document.getElementById('scrollToTop').style.display = 'block';
+      } else {
+        document.getElementById('scrollToTop').style.display = 'none';
+      }
+    });
+
+    // Прокрутка к верху по клику
+    document.getElementById('scrollToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+
+  <!-- Футер -->
+ <footer>
+  <p>© 2025 Edumax. Все права защищены.</p>
+  <div class="footer-nav">
+    <a href="index.html">Главная</a> |
+    <a href="catalog.html">Курсы</a> |
+    <a href="contacts.html">Контакты</a>
+    <h3>Мы в социальных сетях</h3>
+  <a href="https://t.me/Edumax112" target="_blank">
+    <img src="телега.jpeg" alt="Telegram" width="30" height="30">
+  </a>
+  </div>
+  <div id="time"></div>
+  <div id="visits"></div>
+</footer>
+
+</body>
+</html>

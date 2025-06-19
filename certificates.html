@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сертификаты — Edumax</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Меню -->
+  <header class="main-header">
+    <div class="logo">Edumax</div>
+    <nav class="nav">
+    </nav>
+  </header>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #121212;
+}
+
+.container {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: #bb33ff;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-shadow: 0 0 20px #bb33ff;
+    text-align: center;
+}
+
+.certificates {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #bb33ff;
+    box-shadow: 0 0 20px #bb33ff;
+    transform: translateY(50px);
+   opacity: 0;
+    animation: fadeInUp 1s forwards ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+       opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+       opacity: 1;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Меню -->
+    <header><!-- Вставь меню здесь --></header>
+
+    <div class="container">
+        <h1>Сертификаты</h1>
+
+        <div class="certificates">
+            <div class="card">
+                <img src="англ.jpeg" alt="Сертификат">
+                <p>Сертификат о праве преподавания английского языка</p>
+            </div>
+            <div class="card">
+                <img src="математика.jpeg" alt="Сертификат">
+                <p>Свидетельство о квалификации преподавателей математики</p>
+            </div>
+            <div class="card">
+                <img src="инфа.jpeg" alt="Сертификат">
+                <p>Диплом преподавателя информатики</p>
+            </div>
+            <div class="card">
+                <img src="общество.jpg" alt="Сертификат">
+                <p>Сертификация по истории и обществознанию</p>
+            </div>
+            <!-- Добавь другие по мере необходимости -->
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer><!-- Вставь футер здесь --></footer>
+
+</body>
+</html>
